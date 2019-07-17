@@ -12,7 +12,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 		 try (Connection conn = DriverManager.getConnection(
-	                "jdbc:postgresql://edb-service/edb", "dbuser", "dbpwd")) {
+	                "jdbc:postgresql://edb-service:5444/edb", "edb", "123456789")) {
 
 	            if (conn != null) {
 	                System.out.println("Connected to the database!");
